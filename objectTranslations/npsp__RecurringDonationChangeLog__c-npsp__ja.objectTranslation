@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>継続支援変更ログ</value>
+    </caseValues>
+    <fields>
+        <help><!-- The type of change (Upgrade, Downgrade, etc.) this Change Log record represents. --></help>
+        <label>変更種別</label>
+        <name>npsp__ChangeType__c</name>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Effective Date of the Recurring Donation when this change occurred. --></help>
+        <label>発効日</label>
+        <name>npsp__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Amount for the related Recurring Donation. --></help>
+        <label>新規金額</label>
+        <name>npsp__NewAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new annual value for this Recurring Donation, based on the amount and schedule. --></help>
+        <label>新規年間金額</label>
+        <name>npsp__NewAnnualValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Campaign for the related Recurring Donation. --></help>
+        <label>新規キャンペーン</label>
+        <name>npsp__NewCampaign__c</name>
+        <relationshipLabel>継続支援の変更ログ (新規キャンペーン)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The new expected total value for this Fixed Recurring Donation, based on the amount and schedule. --></help>
+        <label>新規予想合計金額</label>
+        <name>npsp__NewExpectedTotalValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Installment Frequency for the related Recurring Donation. --></help>
+        <label>新規頻度</label>
+        <name>npsp__NewInstallmentFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Installment Period for the related Recurring Donation. --></help>
+        <label>新規間隔</label>
+        <name>npsp__NewInstallmentPeriod__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Payment Method for the related Recurring Donation. --></help>
+        <label>新規支払方法</label>
+        <name>npsp__NewPaymentMethod__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new number of installments (donations) you expect to receive. For Fixed-Length Recurring Donations only. --></help>
+        <label>新規予定回数</label>
+        <name>npsp__NewPlannedInstallments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Recurring Type for the related Recurring Donation. --></help>
+        <label>新規継続種別</label>
+        <name>npsp__NewRecurringType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Status Reason for the related Recurring Donation. --></help>
+        <label>新規状況の理由</label>
+        <name>npsp__NewStatusReason__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Status for the related Recurring Donation. --></help>
+        <label>新規状況</label>
+        <name>npsp__NewStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Amount for the related Recurring Donation. --></help>
+        <label>前の金額</label>
+        <name>npsp__PreviousAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous annual value for this Recurring Donation, based on the amount and schedule --></help>
+        <label>前の年間金額</label>
+        <name>npsp__PreviousAnnualValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Campaign for the related Recurring Donation. --></help>
+        <label>前のキャンペーン</label>
+        <name>npsp__PreviousCampaign__c</name>
+        <relationshipLabel>継続支援の変更ログ (前のキャンペーン)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The previous expected total value for this Fixed Recurring Donation, based on the amount and schedule. --></help>
+        <label>前の予想合計金額</label>
+        <name>npsp__PreviousExpectedTotalValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Installment Frequency for the related Recurring Donation. --></help>
+        <label>前の頻度</label>
+        <name>npsp__PreviousInstallmentFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Installment Period for the related Recurring Donation. --></help>
+        <label>前の間隔</label>
+        <name>npsp__PreviousInstallmentPeriod__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Payment Method for the related Recurring Donation. --></help>
+        <label>前の支払方法</label>
+        <name>npsp__PreviousPaymentMethod__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous number of installments (donations) you expect to receive. For Fixed-Length Recurring Donations only. --></help>
+        <label>前の予定回数</label>
+        <name>npsp__PreviousPlannedInstallments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Recurring Type for the related Recurring Donation. --></help>
+        <label>前の継続種別</label>
+        <name>npsp__PreviousRecurringType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Status Reason for the related Recurring Donation. --></help>
+        <label>前の状況の理由</label>
+        <name>npsp__PreviousStatusReason__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Status for the related Recurring Donation. --></help>
+        <label>前の状況</label>
+        <name>npsp__PreviousStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Recurring Donation related to this Change Log record. --></help>
+        <label>継続支援</label>
+        <name>npsp__RecurringDonation__c</name>
+        <relationshipLabel>継続支援の変更ログ</relationshipLabel>
+    </fields>
+    <nameFieldLabel>継続支援の変更ログ番号</nameFieldLabel>
+</CustomObjectTranslation>
