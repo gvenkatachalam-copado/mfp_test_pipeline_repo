@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registro de alterações a doação recorrente</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registros de alterações a doações recorrentes</value>
+    </caseValues>
+    <fields>
+        <help><!-- The type of change (Upgrade, Downgrade, etc.) this Change Log record represents. --></help>
+        <label>Tipo de alteração</label>
+        <name>npsp__ChangeType__c</name>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Effective Date of the Recurring Donation when this change occurred. --></help>
+        <label>Data de vigência</label>
+        <name>npsp__EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Amount for the related Recurring Donation. --></help>
+        <label>Novo valor</label>
+        <name>npsp__NewAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new annual value for this Recurring Donation, based on the amount and schedule. --></help>
+        <label>Novo valor anual</label>
+        <name>npsp__NewAnnualValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Campaign for the related Recurring Donation. --></help>
+        <label>Nova campanha</label>
+        <name>npsp__NewCampaign__c</name>
+        <relationshipLabel>Log de alterações de doação recorrente (nova campanha)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The new expected total value for this Fixed Recurring Donation, based on the amount and schedule. --></help>
+        <label>Novo valor total esperado</label>
+        <name>npsp__NewExpectedTotalValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Installment Frequency for the related Recurring Donation. --></help>
+        <label>Nova frequência de parcelamento</label>
+        <name>npsp__NewInstallmentFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Installment Period for the related Recurring Donation. --></help>
+        <label>Novo período de parcelamento</label>
+        <name>npsp__NewInstallmentPeriod__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Payment Method for the related Recurring Donation. --></help>
+        <label>Novo método de pagamento</label>
+        <name>npsp__NewPaymentMethod__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new number of installments (donations) you expect to receive. For Fixed-Length Recurring Donations only. --></help>
+        <label>Novo número de parcelas planejadas</label>
+        <name>npsp__NewPlannedInstallments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Recurring Type for the related Recurring Donation. --></help>
+        <label>Novo tipo de recorrência</label>
+        <name>npsp__NewRecurringType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Status Reason for the related Recurring Donation. --></help>
+        <label>Motivo do novo status</label>
+        <name>npsp__NewStatusReason__c</name>
+    </fields>
+    <fields>
+        <help><!-- The new Status for the related Recurring Donation. --></help>
+        <label>Novo status</label>
+        <name>npsp__NewStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Amount for the related Recurring Donation. --></help>
+        <label>Valor anterior</label>
+        <name>npsp__PreviousAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous annual value for this Recurring Donation, based on the amount and schedule --></help>
+        <label>Valor anual anterior</label>
+        <name>npsp__PreviousAnnualValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Campaign for the related Recurring Donation. --></help>
+        <label>Campanha anterior</label>
+        <name>npsp__PreviousCampaign__c</name>
+        <relationshipLabel>Log de alterações de doação recorrente (campanha anterior)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The previous expected total value for this Fixed Recurring Donation, based on the amount and schedule. --></help>
+        <label>Valor total esperado anterior</label>
+        <name>npsp__PreviousExpectedTotalValue__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Installment Frequency for the related Recurring Donation. --></help>
+        <label>Frequência de parcelamento anterior</label>
+        <name>npsp__PreviousInstallmentFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Installment Period for the related Recurring Donation. --></help>
+        <label>Período de parcelamento anterior</label>
+        <name>npsp__PreviousInstallmentPeriod__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Payment Method for the related Recurring Donation. --></help>
+        <label>Método de pagamento anterior</label>
+        <name>npsp__PreviousPaymentMethod__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous number of installments (donations) you expect to receive. For Fixed-Length Recurring Donations only. --></help>
+        <label>Número anterior de parcelas planejadas</label>
+        <name>npsp__PreviousPlannedInstallments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Recurring Type for the related Recurring Donation. --></help>
+        <label>Tipo de recorrência anterior</label>
+        <name>npsp__PreviousRecurringType__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Status Reason for the related Recurring Donation. --></help>
+        <label>Motivo do status anterior</label>
+        <name>npsp__PreviousStatusReason__c</name>
+    </fields>
+    <fields>
+        <help><!-- The previous Status for the related Recurring Donation. --></help>
+        <label>Status anterior</label>
+        <name>npsp__PreviousStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Recurring Donation related to this Change Log record. --></help>
+        <label>Doação recorrente</label>
+        <name>npsp__RecurringDonation__c</name>
+        <relationshipLabel>Log de alterações de DR</relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Número de logs de alterações de DR</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>カスタマイズ可能な積み上げ集計設定</value>
+    </caseValues>
+    <fields>
+        <help><!-- When checked, the Account Hard Credit (Non-Skew) nightly job limits the number of Accounts selected for recalculation by looking for recently updated Opportunities on those Accounts. This helps to improve Customizable Rollup nightly job performance. --></help>
+        <label>スキューでない増分取引先ハードクレジット</label>
+        <name>npsp__AccountHardCreditNonSkew_Incremental__c</name>
+    </fields>
+    <fields>
+        <help><!-- JSON for the CMT deployment result
+{ &quot;jobId&quot;: &quot;repsonse&quot; } --></help>
+        <label>CMT API リリース結果</label>
+        <name>npsp__CMT_API_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- FOR LDV ORGS ONLY WITH SFDO GUIDANCE. To avoid a Query Timeout in the rollup batch job in orgs with many millions of Accounts, this specifies the maximum number of Accounts processed in each batch. --></help>
+        <label>LDV: 取引先ハードクレジットチャンクサイズ</label>
+        <name>npsp__ChunkSize_Account_HardCredit__c</name>
+    </fields>
+    <fields>
+        <help><!-- FOR LDV ORGS ONLY WITH SFDO GUIDANCE. To avoid a Query Timeout in the rollup batch job in orgs with many millions of Contacts, this specifies the maximum number of Contacts processed in each batch. --></help>
+        <label>LDV: 取引先責任者ハードクレジットチャンクサイズ</label>
+        <name>npsp__ChunkSize_Contact_HardCredit__c</name>
+    </fields>
+    <fields>
+        <help><!-- FOR LDV ORGS ONLY WITH SFDO GUIDANCE. To avoid a Query Timeout in the rollup batch job in orgs with many millions of Contacts, this specifies the maximum number of Contacts processed in each batch. --></help>
+        <label>LDV: 取引先責任者ソフトクレジットチャンクサイズ</label>
+        <name>npsp__ChunkSize_Contact_SoftCredit__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, the Contact Hard Credit (Non-Skew) nightly job limits the number of Contacts selected for recalculation by looking for those Contacts recently updated Opportunities. This helps to improve Customizable Rollup nightly job performance. --></help>
+        <label>スキューでない増分取引先責任者ハードクレジット</label>
+        <name>npsp__ContactHardCreditNonSkew_Incremental__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to enable the new NPSP Customizable Rollup Engine --></help>
+        <label>カスタマイズ可能な積み上げ集計の有効化</label>
+        <name>npsp__Customizable_Rollups_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to prevent hard credit and soft credit rollups on Accounts and Contacts from only processing Account and Contact records that have existing related Opportunity or Opportunity Contact Role records. --></help>
+        <label>関連レコード絞り込みの無効化</label>
+        <name>npsp__Disable_Related_Records_Filter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the number of recurring donations that are recalculated during the nightly Recurring Donation batch job based on recency of the donation. --></help>
+        <label>再計算される継続支援を制限</label>
+        <name>npsp__LimitRecalculatedRecurringDonations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit Opportunities included in the Recurring Donation Rollup to those modified within a number of days. Time Bound Recurring donation Rollup batch jobs override this setting. --></help>
+        <label>過去の日数内に変更された継続支援</label>
+        <name>npsp__RecurringDonationLastNDays__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating donor rollups to the Account object. --></help>
+        <label>取引先ハードクレジットバッチサイズ</label>
+        <name>npsp__Rollups_Account_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating donor rollups to the Account object using Skew Mode. --></help>
+        <label>取引先スキューモードバッチサイズ</label>
+        <name>npsp__Rollups_Account_SkewMode_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating soft credit donor rollups to the Account object. --></help>
+        <label>取引先ソフトクレジットバッチサイズ</label>
+        <name>npsp__Rollups_Account_Soft_Credit_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating soft credit donor rollups to the Account object. --></help>
+        <label>取引先への取引先責任者ソフトクレジットバッチサイズ</label>
+        <name>npsp__Rollups_AcctContactSoftCredit_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating hard credit donor rollups to the Contact object. --></help>
+        <label>取引先責任者ハードクレジットバッチサイズ</label>
+        <name>npsp__Rollups_Contact_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating donor rollups to the Contact object using Skew Mode. --></help>
+        <label>取引先責任者スキューモードバッチサイズ</label>
+        <name>npsp__Rollups_Contact_SkewMode_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating soft credit donor rollups to the Contact object. --></help>
+        <label>取引先責任者ソフトクレジットバッチサイズ</label>
+        <name>npsp__Rollups_Contact_Soft_Credit_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating donor rollups to the General Accounting Unit object. --></help>
+        <label>GAU バッチサイズ</label>
+        <name>npsp__Rollups_GAU_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Incremental Rollups Override Use Only. This value overrides the field used to filter related Opportunities to determine which Accounts, Contacts, GAUs or RDs are recalculated during a nightly scheduled job. Defaults to SystemModStamp. --></help>
+        <label>増分: 過去 N 日間の項目上書き</label>
+        <name>npsp__Rollups_IncrementalLastNDays_FldOverride__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Incremental Rollups Override Use Only. This value overrides the calculated number of days used to filter related Opportunities to determine which Accounts, Contacts, GAUs or RDs are recalculated during a nightly scheduled job. --></help>
+        <label>増分: 過去 N 日間の値上書き</label>
+        <name>npsp__Rollups_IncrementalLastNDays_ValOverride__c</name>
+    </fields>
+    <fields>
+        <help><!-- The maximum number of related Opportunities on an Account or Contact allowed in non-Skew Mode Rollup Batch Jobs. An Account or Contact with more than this number of related Opportunities will always be rolled up using Skew Mode. --></help>
+        <label>スキューモードしきい値</label>
+        <name>npsp__Rollups_Limit_on_Attached_Opps_for_Skew__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Account, Contact, or GAU records per batch to select for Skew Mode processing. --></help>
+        <label>スキューモードディスパッチャーバッチサイズ</label>
+        <name>npsp__Rollups_Skew_Dispatcher_Batch_Size__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Plantilla de plan de acción</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Plantillas de planes de acción</value>
+    </caseValues>
+    <fieldSets>
+        <label>Gestionar EP de plantilla FS</label>
+        <name>npsp__ManageEPTemplateFS</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Recalculates a child Task&apos;s due date based on when the parent Task was actually completed. --></help>
+        <label>Actualizar f. de venc. tarea secundaria</label>
+        <name>npsp__Automatically_Update_Child_Task_Due_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- When an Engagement Plan Task&apos;s Assigned To field is left blank, who should the Task be assigned to? --></help>
+        <label>Persona asignada predeterminada</label>
+        <name>npsp__Default_Assignee__c</name>
+        <picklistValues>
+            <masterLabel>Owner of Object for Engagement Plan</masterLabel>
+            <translation><!-- Owner of Object for Engagement Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Creating Engagement Plan</masterLabel>
+            <translation><!-- User Creating Engagement Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Descripción</label>
+        <name>npsp__Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Should Tasks with Due Dates on a weekend day be scheduled for the Friday before the weekend or the Monday after? This applies only if Skip Weekend is selected. --></help>
+        <label>Reprogramar para</label>
+        <name>npsp__Reschedule_To__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If selected, Tasks created in this Engagement Plan will not have Due Dates that fall on Saturday or Sunday. --></help>
+        <label>Omitir fines de semana</label>
+        <name>npsp__Skip_Weekends__c</name>
+    </fields>
+    <fields>
+        <label>Cantidad de planes de acción</label>
+        <name>npsp__Total_Engagement_Plans__c</name>
+    </fields>
+    <fields>
+        <label>Cantidad de tareas</label>
+        <name>npsp__Total_Tasks__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nombre de plantilla del plan de acción</nameFieldLabel>
+    <webLinks>
+        <label>Gestionar plantilla</label>
+        <name>npsp__Manage_Template</name>
+    </webLinks>
+</CustomObjectTranslation>

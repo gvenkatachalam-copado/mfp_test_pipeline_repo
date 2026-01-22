@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuración de implantación personalizable</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configuraciones de implantaciones personalizables</value>
+    </caseValues>
+    <fields>
+        <help><!-- When checked, the Account Hard Credit (Non-Skew) nightly job limits the number of Accounts selected for recalculation by looking for recently updated Opportunities on those Accounts. This helps to improve Customizable Rollup nightly job performance. --></help>
+        <label>Crédito duro cuenta increm. sin desfase</label>
+        <name>npsp__AccountHardCreditNonSkew_Incremental__c</name>
+    </fields>
+    <fields>
+        <help><!-- JSON for the CMT deployment result
+{ &quot;jobId&quot;: &quot;repsonse&quot; } --></help>
+        <label>Resultado implementación de API de CMT</label>
+        <name>npsp__CMT_API_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- FOR LDV ORGS ONLY WITH SFDO GUIDANCE. To avoid a Query Timeout in the rollup batch job in orgs with many millions of Accounts, this specifies the maximum number of Accounts processed in each batch. --></help>
+        <label>LDV: Tamaño sección crédito duro cuenta</label>
+        <name>npsp__ChunkSize_Account_HardCredit__c</name>
+    </fields>
+    <fields>
+        <help><!-- FOR LDV ORGS ONLY WITH SFDO GUIDANCE. To avoid a Query Timeout in the rollup batch job in orgs with many millions of Contacts, this specifies the maximum number of Contacts processed in each batch. --></help>
+        <label>LDV:Tamaño sección crédito duro contacto</label>
+        <name>npsp__ChunkSize_Contact_HardCredit__c</name>
+    </fields>
+    <fields>
+        <help><!-- FOR LDV ORGS ONLY WITH SFDO GUIDANCE. To avoid a Query Timeout in the rollup batch job in orgs with many millions of Contacts, this specifies the maximum number of Contacts processed in each batch. --></help>
+        <label>LDV: Tam sección crédito blando contacto</label>
+        <name>npsp__ChunkSize_Contact_SoftCredit__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, the Contact Hard Credit (Non-Skew) nightly job limits the number of Contacts selected for recalculation by looking for those Contacts recently updated Opportunities. This helps to improve Customizable Rollup nightly job performance. --></help>
+        <label>Crédito duro contacto incre. sin desfase</label>
+        <name>npsp__ContactHardCreditNonSkew_Incremental__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to enable the new NPSP Customizable Rollup Engine --></help>
+        <label>Activar totalizaciones personalizables</label>
+        <name>npsp__Customizable_Rollups_Enabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to prevent hard credit and soft credit rollups on Accounts and Contacts from only processing Account and Contact records that have existing related Opportunity or Opportunity Contact Role records. --></help>
+        <label>Desactivar filtro registros relacionados</label>
+        <name>npsp__Disable_Related_Records_Filter__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit the number of recurring donations that are recalculated during the nightly Recurring Donation batch job based on recency of the donation. --></help>
+        <label>Limitar donaciones recurr. recalculadas</label>
+        <name>npsp__LimitRecalculatedRecurringDonations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Limit Opportunities included in the Recurring Donation Rollup to those modified within a number of days. Time Bound Recurring donation Rollup batch jobs override this setting. --></help>
+        <label>DR modificadas en último número de días</label>
+        <name>npsp__RecurringDonationLastNDays__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating donor rollups to the Account object. --></help>
+        <label>Tamaño de lote de crédito duro de cuenta</label>
+        <name>npsp__Rollups_Account_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating donor rollups to the Account object using Skew Mode. --></help>
+        <label>Tamaño de lote en modo desfase de cuenta</label>
+        <name>npsp__Rollups_Account_SkewMode_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating soft credit donor rollups to the Account object. --></help>
+        <label>Tamaño de lote crédito blando de cuenta</label>
+        <name>npsp__Rollups_Account_Soft_Credit_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating soft credit donor rollups to the Account object. --></help>
+        <label>Tam. lote créd. blando contacto a cuenta</label>
+        <name>npsp__Rollups_AcctContactSoftCredit_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating hard credit donor rollups to the Contact object. --></help>
+        <label>Tamaño lote de crédito duro de contacto</label>
+        <name>npsp__Rollups_Contact_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating donor rollups to the Contact object using Skew Mode. --></help>
+        <label>Tamaño lote en modo desfase de contacto</label>
+        <name>npsp__Rollups_Contact_SkewMode_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating soft credit donor rollups to the Contact object. --></help>
+        <label>Tamaño lote de crédito blando contacto</label>
+        <name>npsp__Rollups_Contact_Soft_Credit_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when recalculating donor rollups to the General Accounting Unit object. --></help>
+        <label>Tamaño de lote de CCG</label>
+        <name>npsp__Rollups_GAU_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Incremental Rollups Override Use Only. This value overrides the field used to filter related Opportunities to determine which Accounts, Contacts, GAUs or RDs are recalculated during a nightly scheduled job. Defaults to SystemModStamp. --></help>
+        <label>Incremental: Sust. campo Últimos N días</label>
+        <name>npsp__Rollups_IncrementalLastNDays_FldOverride__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Incremental Rollups Override Use Only. This value overrides the calculated number of days used to filter related Opportunities to determine which Accounts, Contacts, GAUs or RDs are recalculated during a nightly scheduled job. --></help>
+        <label>Incremental: Sust. valor Últimos N días</label>
+        <name>npsp__Rollups_IncrementalLastNDays_ValOverride__c</name>
+    </fields>
+    <fields>
+        <help><!-- The maximum number of related Opportunities on an Account or Contact allowed in non-Skew Mode Rollup Batch Jobs. An Account or Contact with more than this number of related Opportunities will always be rolled up using Skew Mode. --></help>
+        <label>Umbral de modo Desfase</label>
+        <name>npsp__Rollups_Limit_on_Attached_Opps_for_Skew__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Account, Contact, or GAU records per batch to select for Skew Mode processing. --></help>
+        <label>Tamaño de lote despachador modo Desfase</label>
+        <name>npsp__Rollups_Skew_Dispatcher_Batch_Size__c</name>
+    </fields>
+    <gender>Feminine</gender>
+</CustomObjectTranslation>

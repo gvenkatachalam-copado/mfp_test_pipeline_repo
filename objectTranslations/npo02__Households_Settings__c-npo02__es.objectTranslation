@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuración de Hogares</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configuraciones de Hogares</value>
+    </caseValues>
+    <fields>
+        <help><!-- If checked, the system will provide automatic naming for Household Names, Informal and Formal Greetings. --></help>
+        <label>Nomenclatura de hogar automática</label>
+        <name>npo02__Advanced_Household_Naming__c</name>
+    </fields>
+    <fields>
+        <help><!-- Always rollup donor statistics to the primary Contact Role, and corresponding household, on an opportunity, even if the opportunity is not from an individual (i.e. from a company, foundation, etc.) --></help>
+        <label>Totalizar siempre en función contacto pr</label>
+        <name>npo02__Always_Rollup_to_Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is a non-exposed setting to toggle household naming code to use an asynchronous version instead of the standard version. --></help>
+        <label>Nomenclatura asíncrona de hogares</label>
+        <name>npo02__Async_Household_Naming__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of records processed at a time when calculating donor statistics.  The default size is 200.  Reduce to a smaller number if the Opportunity Rollups are failing due to system limits. --></help>
+        <label>Tamaño del lote de totalizaciones</label>
+        <name>npo02__Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Trigger behavior now controlled in the Trigger Configuration page of NPSP Settings. --></help>
+        <label>DESUSADO-Disable_HHAfter_trigger</label>
+        <name>npo02__DISABLE_HouseholdAfter_trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Trigger behavior now controlled in the Trigger Configuration page of NPSP Settings. --></help>
+        <label>DESUSADO-Disable_HHBefore_trigger</label>
+        <name>npo02__DISABLE_HouseholdBefore_trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Trigger behavior now controlled in the Trigger Configuration page of NPSP Settings. --></help>
+        <label>DESUSADO-Disable_Household_Opp_trigger</label>
+        <name>npo02__DISABLE_Household_Opportunity_trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Trigger behavior now controlled in the Trigger Configuration page of NPSP Settings. --></help>
+        <label>DESUSADO-Disable_Households_trigger</label>
+        <name>npo02__DISABLE_Households_trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Trigger behavior now controlled in the Trigger Configuration page of NPSP Settings. --></help>
+        <label>DESUSADO-Disable_OppRollup_trigger</label>
+        <name>npo02__DISABLE_OpportunityRollup_trigger__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. Trigger behavior now controlled in the Trigger Configuration page of NPSP Settings. --></help>
+        <label>DESUSADO-Enable_Opp_Rollup_Triggers</label>
+        <name>npo02__Enable_Opp_Rollup_Triggers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows you to rollup closed Opportunity totals based on Opportunity Contact Role Roles.  Soft credit rollups happen only in the nightly batch job, and not on triggers.  They can be manually run using the Rollup Donations Batch tab. --></help>
+        <label>Activar totalizaciones créditos blandos</label>
+        <name>npo02__Enable_Soft_Credit_Rollups__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. New versions of the Nonprofit Starter Pack will be automatically installed. --></help>
+        <label>DESUSADO-Activar comprob. actualización</label>
+        <name>npo02__Enable_Update_Check__c</name>
+    </fields>
+    <fields>
+        <help><!-- Names of Opportunity Record Types to exclude from statistics when rolling up Account Opportunities. --></help>
+        <label>Tipos reg op excluidos para totalización</label>
+        <name>npo02__Excluded_Account_Opp_Rectypes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Values for the Opportunity Type field to exclude from statistics when rolling up Account Opportunities. --></help>
+        <label>Tipos de op excluidos para totalización</label>
+        <name>npo02__Excluded_Account_Opp_Types__c</name>
+    </fields>
+    <fields>
+        <help><!-- Names of Opportunity Record Types to exclude from statistics when rolling up Contact Opportunities. --></help>
+        <label>Tipos reg excluidos totalizac contactos</label>
+        <name>npo02__Excluded_Contact_Opp_Rectypes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Values for the Opportunity Type field to exclude from statistics when rolling up Contact Opportunities. --></help>
+        <label>Tipos op excluidos totalizac contactos</label>
+        <name>npo02__Excluded_Contact_Opp_Types__c</name>
+    </fields>
+    <fields>
+        <help><!-- The NPSP automatically checks for the presence of custom fiscal years, and disabled FY settings if they&apos;re found to avoid errors.  This setting overrides that safety-check for users who have accidentally enabled custom fiscal years. --></help>
+        <label>Forzar año fiscal</label>
+        <name>npo02__Force_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. New versions of the Nonprofit Starter Pack will be automatically installed. --></help>
+        <label>DESUSADO-Tiene actualización de paquete</label>
+        <name>npo02__Has_Package_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field to create automatic Contact Roles for Household members of the Primary Contact --></help>
+        <label>Funciones del contacto en hogar activada</label>
+        <name>npo02__Household_Contact_Roles_On__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact Record Types excluded from Household creation.  This setting is ignored if you are using the Household Account model. --></help>
+        <label>Tipos registros excluidos creación hogar</label>
+        <name>npo02__Household_Creation_Excluded_Recordtypes__c</name>
+    </fields>
+    <fields>
+        <help><!-- The report ID of the Household Mailing List Report used for Household-deduplicated Campaign mailing lists.  Report should be of Campaigns with Contacts, where Member Status does not contain &apos;Duplicate&apos; --></help>
+        <label>Informe de lista de envío de hogar</label>
+        <name>npo02__Household_Mailing_List_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Role used when creating automatic Opportunity Contact Roles for Household members. --></help>
+        <label>Función del contacto de miembro de hogar</label>
+        <name>npo02__Household_Member_Contact_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contact Record Types excluded from Household Opportunity Contact Role creation --></help>
+        <label>Tipos de registro excluido OCR de hogar</label>
+        <name>npo02__Household_OCR_Excluded_Recordtypes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specifies which Contacts will have Households objects automatically created for them.  Note that this is only used for Contacts using the One-to-One or Individual Account Model.  This is ignored for Contacts with the Household Account Model. --></help>
+        <label>Reglas de objeto Hogar</label>
+        <name>npo02__Household_Rules__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. New versions of the Nonprofit Starter Pack will be automatically installed. --></help>
+        <label>DESUSADO-Última comprob. actualización</label>
+        <name>npo02__Last_Update_Check__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. New versions of the Nonprofit Starter Pack will be automatically installed. --></help>
+        <label>DESUSADO-Versión de paquete máxima</label>
+        <name>npo02__Max_Package_Version__c</name>
+    </fields>
+    <fields>
+        <help><!-- The length of the grace period (in days) after a membership expires (last end date) before the status moves from &apos;Grace Period&apos; to &apos;Expired&apos;.  Defaults to 30 days. --></help>
+        <label>Período de gracia de la afiliación</label>
+        <name>npo02__Membership_Grace_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Names of Opportunity Record Types, such as Membership, that you want to roll up separately from other Opportunity Record Types. --></help>
+        <label>Nombres de tipos registros de afiliación</label>
+        <name>npo02__Membership_Record_Types__c</name>
+    </fields>
+    <fields>
+        <help><!-- Id for the currently scheduled Opportunity Rollup Job --></help>
+        <label>Id trabajo programado totalización op.</label>
+        <name>npo02__Opp_Rollup_Scheduled_Job_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. New versions of the Nonprofit Starter Pack will be automatically installed. --></help>
+        <label>DESUSADO-URL de actualización de paquete</label>
+        <name>npo02__Package_Update_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide a value for &apos;N day&apos; rollups, where &apos;N&apos; is the number of days from today into the past.  This value defaults to rollup over the past 365 days. --></help>
+        <label>Valor de Totalizar N días</label>
+        <name>npo02__Rollup_N_Day_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of active scheduled Apex Jobs to look at when scheduling new jobs. --></help>
+        <label>Límite de trabajos programados</label>
+        <name>npo02__Schedule_Job_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of Opportunity Contact Role roles to include in soft credit rollups. --></help>
+        <label>Funciones de créditos blandos</label>
+        <name>npo02__Soft_Credit_Roles__c</name>
+    </fields>
+    <fields>
+        <help><!-- DEPRECATED. New versions of the Nonprofit Starter Pack will be automatically installed. --></help>
+        <label>DESUSADO-Actualizar intervalo comprobac.</label>
+        <name>npo02__Update_Check_Interval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checking this box will cause Opportunity rollup totals to respect fiscal year, instead of calendar years settings. To set Fiscal Year information, go to Setup-&gt;Company Profile-&gt;Fiscal Year.  NOTE: Custom Fiscal Year Settings are NOT supported. --></help>
+        <label>Usar año fiscal para totalizaciones</label>
+        <name>npo02__Use_Fiscal_Year_for_Rollups__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Role given to the Contacts whose should receive Soft Credit for a Matching Gift. --></help>
+        <label><!-- Matched Donor Role --></label>
+        <name>npsp__Matched_Donor_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of records per batch to process when setting seasonal address as the mailing address. --></help>
+        <label><!-- Seasonal Address Batch Size --></label>
+        <name>npsp__Seasonal_Addresses_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box to use Dated Conversion Rates when Advanced Currency Management is enabled in this Organization. If unchecked and ACM is enabled, all NPSP roll-ups will use the default exchange rate for by currency. --></help>
+        <label><!-- Use Dated Conversion Rates if available --></label>
+        <name>npsp__Use_Dated_Conversion_Rates__c</name>
+    </fields>
+    <gender>Feminine</gender>
+</CustomObjectTranslation>
